@@ -62,7 +62,7 @@ public class Conta {
        "Conta: " + conta + "\n" +
        "Nome: " + nome + "\n" +
        "Saldo: " + saldo + "\n" +      
-       "Limite: " + limite + "\n";      
+       "Limite : " + limite + "\n";      
    }
 
  

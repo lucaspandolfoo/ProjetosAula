@@ -39,17 +39,17 @@ public static void main(String[] args) {
     
             if ((c1.getSaldo() >= c1.getLimite()) && (c2.getSaldo() >= c2.getLimite())) {
     
-                    if ((vTrans > c2.getLimite()) || (vTrans > c1.getLimite())) {
-                        System.out.println("Valor do limite excedido!");
-                        return;
-                    } else {
-                
+                    if ((vTrans <= c2.getLimite()) && (vTrans <= c1.getLimite())) {
+
                     Transferencia(200d, c2, c1);
                     System.out.println("Transferência concluída com sucesso!");
 
                     System.out.println(c1.toString());
                     System.out.println(c2.toString());
-                     }
+                     } else {
+                       System.out.println("Valor do limite excedido!");
+                       return;
+                    }       
           } else {
            System.out.println("Saldo inferior ao valor do limite!");
            return; 
